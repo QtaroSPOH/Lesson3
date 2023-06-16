@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class WizardMotion : MonoBehavior
+{
+   public Animator animator;
+   
+   void Update()
+   {  
+      animator.SetFloat("velX", Input.GetAxis("Horizontal"), 0.1f, Time.deltaTime);
+      animator.SetFloat("velX", Input.GetAxis("Vertical"), 0.1f, Time.deltaTime);
+   }
+}
+ 
