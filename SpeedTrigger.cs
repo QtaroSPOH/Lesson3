@@ -9,11 +9,11 @@ public class SpeedTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        other.GetComponent<FirstPersonMovement>().runSpeed *= speedFactor;
+        other.GetComponent<ThirdPersonMovement>().runSpeed *= speedFactor;
     }
 
     void OnTriggerExit(Collider other)
     {
-        other.GetComponent<FirstPersonMovement>().runSpeed /= speedFactor;
+        other.GetComponent<ThirdPersonMovement>().runSpeed /= speedFactor;
     }
 }
